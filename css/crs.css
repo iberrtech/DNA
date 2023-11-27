@@ -1,0 +1,76 @@
+:root{
+    --blue-clr:#2c7abd;
+    --red-clr:#db3438;
+}
+
+/*header*/
+.crs-header{
+    position: fixed;
+    background: var(--blue-clr);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    height: 125px;
+}
+@media screen and (max-width:600px) {
+    .crs-header{
+        height: 80px;
+    }
+}
+
+.nav-open{
+    background: url(../images/nav-icon.png) no-repeat;
+}
+.crs-header .scnd-img {
+    display: block;
+}
+.crs-header .head-social li a{
+    color: white;
+}
+
+
+
+
+
+.header-cnt{
+    height: 35vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    color: var(--blue-clr);
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 10%;
+}
+
+
+/*second section about course*/
+.about-sec{
+    .col-md-6{
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* course advantage*/
+.advtge-ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/*other details*/
+.other-col:nth-child(odd){
+    .h4{
+        color: var(--blue-clr);
+    }
+}
+.other-col:nth-child(even){
+    .h4{
+        color: var(--red-clr);
+    }
+}
+
+.other-col-2{
+    .span{
+        color: var(--red-clr);
+    }
+}

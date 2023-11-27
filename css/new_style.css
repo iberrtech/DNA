@@ -1,0 +1,459 @@
+:root{
+    --blue-clr:#2c7abd;
+    --red-clr:#db3438;
+}
+/*home page header-slider*/
+.home-hr-slr{
+  height: 100vh;
+  
+  background-size: cover;
+}
+.home-hr-slr{
+  .slick-list,.slick-track,.row{
+    height: 100%;
+  }
+
+  .slide{
+    height: 100vh;
+  }
+
+  .col-md-6{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  }
+
+  .sldr-cnt{
+    .h2-1{
+      color: var(--blue-clr);
+      font-size: 4rem;
+    }
+    .h2-2{
+      color: var(--red-clr);
+      font-size: 3rem;
+    }
+    .p{
+      color: black;
+      text-align: center;
+      font-weight: 600;
+    }
+    .h4{
+      font-size: 2rem;
+    }
+  }
+
+  .slr-imge{
+    height: 80vh;
+  }
+  @media screen and (min-width:760px) {
+    .sldr-cnt{
+      .lg-h2{
+        font-size: 2.5rem !important;
+      }
+    }
+  }
+  @media screen and (max-width:760px) {
+    .row{
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+      padding-top: 70px;
+    }
+
+    .sldr-cnt{
+      .h2-1{
+        font-size: 45px;
+        font-weight: bold;
+      }
+      .h2-2{
+        font-size: 20px;
+      }
+      .p{
+        color: black;
+        text-align: center;
+        font-weight: 600;
+      }
+      .h4{
+        font-size: 15px;
+      }
+    }
+    .slr-imge{
+      height: 60vh;
+    }
+  }
+}
+
+
+
+
+
+/*why choose us */
+.whychooseus{
+
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .accordion:focus{
+    outline: 0;
+  }
+  
+  .active, .accordion:hover {
+    background-color: var(--blue-clr);
+    color: white;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+}
+
+  /* home page course section */
+
+  .mdcl-cdng,.mdcl-trn,.mdcl-scr{
+    height: 200px;
+    border-radius: 15px;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 700;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    line-height: 1;
+    cursor: pointer;
+  }
+  @media screen and (max-width:600px) {
+    .mdcl-cdng,.mdcl-trn,.mdcl-scr{
+      height: 100px;
+    }
+  }
+  .mdcl-cdng{
+    background-color: #ec3b3bcf;
+    width: 100%;
+  }
+  .mdcl-trn{
+    background-color: rgb(46, 182, 46);
+  }
+  .mdcl-scr{
+    background-color: rgb(74, 108, 201);
+  }
+
+  .product-sec .hide {
+    display: none;
+  }
+.crs-cnts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.crs-cnt{
+}
+.rspsv{
+  align-items: center;
+  display: flex;
+}
+@media screen and (min-width:750px) {
+  .course-first-title{
+    display: none;
+  }
+}
+@media screen and (max-width:749px) {
+  .course-first-title{
+    visibility: hidden;
+  }
+}
+
+
+
+
+/*----------partners-----------*/
+
+/*5th section.........................................*/
+.section-5{
+  padding: 30px 0;
+  padding-bottom: 40px;
+}
+.section-5.scr-anime h2{
+  position: relative;
+  transform: translateY(-150px);
+  transition: 0.5s;
+  opacity: 0;
+}
+.section-5.scr-anime.actives h2{
+  opacity: 1;
+  transform: translateY(0) !important;
+}
+.section-5 h2{
+  text-align:center;
+  padding: 20px;
+  color: var(--blue);
+}
+/* Slider */
+
+.section-5 .slick-slide {
+    margin: 0px 20px;
+}
+
+.section-5 .slick-slide img {
+    width: 100%;
+}
+
+.section-5 .slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.section-5 .slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.section-5 .slick-list:focus
+{
+    outline: none;
+}
+.section-5 .slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.section-5 .slick-slider .slick-track,
+.section-5 .slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.section-5 .slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.section-5 .slick-track:before,
+.section-5 .slick-track:after
+{
+    display: table;
+    content: '';
+}
+.section-5 .slick-track:after
+{
+    clear: both;
+}
+.section-5 .slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.section-5 .slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'].slick-slide
+{
+    float: right;
+}
+.section-5 .slick-slide img
+{
+    display: block;
+}
+.section-5 .slick-slide.slick-loading img
+{
+    display: none;
+}
+.section-5 .slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.section-5 .slick-initialized .slick-slide
+{
+    display: block;
+}
+.section-5 .slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.section-5 .slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.section-5 .slick-arrow.slick-hidden {
+    display: none;
+}
+@media only screen and (max-width:600px) {
+  .section-5 .slick-initialized .slick-slide{
+  
+  }
+  
+}
+/*5th section.........................................end*/
+
+
+
+/*...................placed students........................*/
+.placed-st{
+  .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 0;
+  }
+
+
+  .crd-img-div{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--blue-clr);
+  }.crd-img-div .crd-img{
+    width: 100%;
+  }
+
+  .crd-n-div{
+    color: var(--blue-clr);
+  }
+
+  .crd-pl-div .pl{
+    color: var(--red-clr);
+    text-align: center;
+  }
+  @media screen and (max-width:600px){
+    .crd-pl-div .pl{
+      font-size: 20px;
+    }
+    .crd-n-div .h4{
+      font-size: 15px;
+    }
+  }
+
+
+  
+}
+
+/*...................cpc exam students........................*/
+.cpc-exam{
+  .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 0;
+  }
+
+
+  .crd-img-div{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--blue-clr);
+  }.crd-img-div .crd-img{
+    width: 100%;
+  }
+
+  .crd-n-div{
+    color: var(--blue-clr);
+  }
+
+  .crd-pl-div .pl{
+    color: var(--red-clr);
+    text-align: center;
+  }
+
+
+  
+}
+
+/*...................youtube........................*/
+.yt-sldr img{
+  border: 5px solid var(--red-clr);
+  border-radius: 5px;
+}
+
+
+/*call button and whatsapp button*/
+.call-btn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--blue-clr);
+  color: white;
+  left: 10px;
+  right: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 0;
+}
+.wtapp-btn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(58, 195, 58);
+  color: white;
+  left: 10px;
+  right: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 0;
+  bottom: 150px;
+}
+ 
